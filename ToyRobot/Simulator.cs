@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace ToyRobot
 {
-    class Program
+    class Simulator 
     {
         static void Main(string[] args)
         {
+            // Automatically executes when application is started.
         }
     }
 }
