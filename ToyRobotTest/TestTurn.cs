@@ -5,7 +5,7 @@ using ToyRobot;
 namespace ToyRobotTest
 {
     [TestClass]
-    public class Turn
+    public class TestTurn
     {
         [TestMethod]
         public void WhenFacingNorthTurnLeft()

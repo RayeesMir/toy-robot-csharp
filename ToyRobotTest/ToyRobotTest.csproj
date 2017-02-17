@@ -52,9 +52,11 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="Report.cs" />
-    <Compile Include="Turn.cs" />
-    <Compile Include="Move.cs" />
+    <Compile Include="TestPlace.cs" />
+    <Compile Include="TestSimulator.cs" />
+    <Compile Include="TestReport.cs" />
+    <Compile Include="TestTurn.cs" />
+    <Compile Include="TestMove.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

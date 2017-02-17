@@ -5,7 +5,7 @@ using ToyRobot;
 namespace ToyRobotTest
 {
     [TestClass]
-    public class Report
+    public class TestReport
     {
         [TestMethod]
         public void ReportLocation()

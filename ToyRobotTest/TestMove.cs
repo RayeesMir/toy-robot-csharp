@@ -5,7 +5,7 @@ using ToyRobot;
 namespace ToyRobotTest
 {
     [TestClass]
-    public class Move
+    public class TestMove
     {
         [TestMethod]
         public void MoveThreeTimesEast()

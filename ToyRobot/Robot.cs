@@ -77,7 +77,7 @@ namespace ToyRobot
 
         public string Report()
         {
-            return "";
+            return "Robot is currently at (" + east + ", " + north + ") and it's facing " + direction.ToUpper();
         }
     }
 }

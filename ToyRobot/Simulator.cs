@@ -6,11 +6,24 @@ using System.Threading.Tasks;
 
 namespace ToyRobot
 {
-    class Simulator 
+    public class Simulator
     {
-        static void Main(string[] args)
+        public Robot Toy;
+        public Table Surface;
+
+        public Simulator(Table table)
         {
-            // Automatically executes when application is started.
+            Surface = table;
+        }
+
+        public void Place(int east, int north, string direction)
+        {
+            Toy = new Robot
+            {
+                direction = direction.ToLower(),
+                east = east,
+                north = north
+            };
         }
     }
 }
