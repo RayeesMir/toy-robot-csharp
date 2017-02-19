@@ -18,12 +18,15 @@ namespace ToyRobot
 
         public void Place(int east, int north, string direction)
         {
-            Toy = new Robot
+            if (Surface.IsValidLocation(east, north))
             {
-                direction = direction.ToLower(),
-                east = east,
-                north = north
-            };
+                Toy = new Robot
+                {
+                    direction = direction.ToLower(),
+                    east = east,
+                    north = north
+                };
+            }
         }
     }
 }
