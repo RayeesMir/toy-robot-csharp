@@ -46,6 +46,20 @@ namespace ToyRobotTest
         }
 
         [TestMethod]
+        public void ProcessMoveWallCommand()
+        {
+            Command testSetup = new Command();
+            Table table = new Table(5, 5);
+            testSetup.Simulation = new Simulator(table);
+            testSetup.ProcessCommand("PLACE 4,4,EAST");
+            testSetup.ProcessCommand("MOVE");
+
+            Robot expected = new Robot { east = 4, north = 4, direction = "east" };
+
+            Assert.AreEqual(expected.east, testSetup.Simulation.Toy.east);
+        }
+
+        [TestMethod]
         public void ProcessRightCommand()
         {
             Command testSetup = new Command();

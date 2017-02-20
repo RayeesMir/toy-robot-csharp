@@ -28,7 +28,11 @@
             switch (movement)
             {
                 case "move":
-                    Toy.Move();
+                    if (Surface.IsValidLocation(Toy.east + 1, Toy.north + 1)
+                        && Surface.IsValidLocation(Toy.east - 1, Toy.north - 1))
+                    {
+                        Toy.Move();
+                    }
                     break;
                 case "right":
                     Toy.TurnRight();
