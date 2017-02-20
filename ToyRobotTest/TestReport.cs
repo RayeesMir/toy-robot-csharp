@@ -17,7 +17,7 @@ namespace ToyRobotTest
                 north = 4
             };
 
-            string expected = "Robot is currently at (5, 4) and it's facing NORTH";
+            string expected = "5,4,NORTH";
 
             string position = Toy.Report();
             

@@ -58,6 +58,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MainProgram.cs" />
     <Compile Include="Robot.cs" />
     <Compile Include="Simulator.cs" />
     <Compile Include="Command.cs" />

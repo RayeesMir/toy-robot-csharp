@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ToyRobot
+﻿namespace ToyRobot
 {
     public class Robot
     {
@@ -77,7 +70,7 @@ namespace ToyRobot
 
         public string Report()
         {
-            return "Robot is currently at (" + east + ", " + north + ") and it's facing " + direction.ToUpper();
+            return east + "," + north + "," + direction.ToUpper();
         }
     }
 }

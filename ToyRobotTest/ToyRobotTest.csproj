@@ -53,6 +53,7 @@
   </Choose>
   <ItemGroup>
     <Compile Include="TestPlace.cs" />
+    <Compile Include="TestCommand.cs" />
     <Compile Include="TestSimulator.cs" />
     <Compile Include="TestReport.cs" />
     <Compile Include="TestTurn.cs" />
@@ -64,6 +65,9 @@
       <Project>{d932d731-62cd-4f72-8498-86c0c87bcbc8}</Project>
       <Name>ToyRobot</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BasicCommand.txt" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
