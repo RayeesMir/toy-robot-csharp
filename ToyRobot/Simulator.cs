@@ -22,5 +22,26 @@
                 };
             }
         }
+
+        public void RobotMoves(string movement)
+        {
+            switch (movement)
+            {
+                case "move":
+                    Toy.Move();
+                    break;
+                case "right":
+                    Toy.TurnRight();
+                    break;
+                case "left":
+                    Toy.TurnLeft();
+                    break;
+            }
+        }
+        
+        public string Report()
+        {
+            return Toy.Report();
+        }
     }
 }
